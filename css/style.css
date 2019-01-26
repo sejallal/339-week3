@@ -18,14 +18,15 @@ p{
 }
 
 nav a{
-  color: blue;
+  color: #983351;
   font-family: Calibri;
 }
 
 a.current{
-  color:purple;
+  color:black;
 }
 
 a{
+  color: #983351;
   font-family: Calibri;
 }
