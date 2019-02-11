@@ -6,6 +6,7 @@ body{
 }
 
 h1{
+  text-align: center;
   font-family: Futura;
 }
 
@@ -15,10 +16,11 @@ h2{
 
 h3{
   font-family: Futura;
+  font-size: 150%;
 }
 
 h4{
-  font-family: Calibri;
+  font-family: Futura;
 }
 
 h5{
@@ -26,19 +28,72 @@ h5{
 }
 
 p{
-  font-family: Futura;
-}
-
-nav a{
-  color: #983351;
-  font-family: Calibri;
-}
-
-a.current{
-  color:black;
+  font-family: Actor;
 }
 
 a{
   color: #983351;
-  font-family: Calibri;
+  font-family: Futura;
 }
+
+ul {
+  list-style-type: none;
+  margin: 15;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: pink;
+  font-family: Futura;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.current) {
+  background-color: #111;
+}
+
+.current {
+  background-color: pink;
+  color: #333;
+}
+
+@import "compass/css3";
+
+a.skip {
+  color: pink;
+}
+
+.horizimg {
+  width: 350px;
+  height: 250px;
+}
+
+.horizimg img {
+  width: 100%;
+  height: auto;
+}
+
+.verticalimg {
+  width: 350px;
+  height: 400px;
+}
+
+.verticalimg img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+@media only screen and (min-width: 1024 px){
+
+}
+*/
