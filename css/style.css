@@ -8,6 +8,7 @@ body{
 h1{
   text-align: center;
   font-family: Futura;
+  font-size: 230%;
 }
 
 h2{
@@ -31,9 +32,26 @@ p{
   font-family: Actor;
 }
 
-a{
-  color: #983351;
-  font-family: Futura;
+a.skip {
+  position: relative;
+  top: auto;
+  width: 1px;
+  height 1px;
+  overflow: hidden;
+  color:grey;
+}
+
+a.skip:focus, a.skip:active {
+  left: auto;
+  top: auto;
+  width: 40%;
+  height: auto;
+  overflow: auto;
+  marigin: 5px;
+  padding: 5px;
+  text-align: left;
+  font-family: Actor;
+  color:pink;
 }
 
 ul {
@@ -61,15 +79,20 @@ li a:hover:not(.current) {
   background-color: #111;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+  margin: 10px;
+  text-align: left;
+  line-height: auto;
+}
+
 .current {
   background-color: pink;
   color: #333;
-}
-
-@import "compass/css3";
-
-a.skip {
-  color: pink;
 }
 
 .horizimg {
@@ -90,6 +113,32 @@ a.skip {
 .verticalimg img {
   width: 100%;
   height: auto;
+}
+
+.homepage {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.homeimg {
+  opacity: .5;
+}
+
+.text {
+  position: absolute;
+  bottom: 4px;
+  left: 255px;
+  text-align: center;
+  width: 655px;
+}
+
+.header {
+  position: absolute;
+  top: 4px;
+  left: 260px;
+  text-align: center;
+  width: 650px;
 }
 
 /*
