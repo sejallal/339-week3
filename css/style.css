@@ -3,6 +3,7 @@ body{
   color: pink;
   size: 150%;
   margin: 5%;
+  background-image: url(https://rooflifters.com/wp-content/uploads/2013/10/roof-raising-rooflifters-background.jpg);
 }
 
 h1{
@@ -32,14 +33,16 @@ p{
   font-family: Actor;
 }
 
-a.skip {
+
+ a.skip {
   position: relative;
-  top: auto;
+  left: -999px;
   width: 1px;
   height 1px;
   overflow: hidden;
-  color:grey;
+  color: grey;
 }
+
 
 a.skip:focus, a.skip:active {
   left: auto;
@@ -57,7 +60,7 @@ a.skip:focus, a.skip:active {
   border-color: white;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 15;
   padding: 0;
@@ -65,11 +68,11 @@ ul {
   background-color: #333;
 }
 
-li {
+nav li {
   float: left;
 }
 
-li a {
+nav li a {
   display: block;
   color: pink;
   font-family: Futura;
@@ -78,8 +81,24 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.current) {
+nav li a:hover:not(.current) {
   background-color: #111;
+}
+
+a{
+  color: black;
+}
+
+img[src$="jpg"] {
+  border: 1px solid #000000;
+}
+
+img[src$="jpeg"] {
+  border: 1px solid #000000;
+}
+
+img[src$="png"] {
+  border: 1px solid #000000;
 }
 
 .flex-container {
@@ -121,7 +140,6 @@ li a:hover:not(.current) {
 .homepage {
   position: relative;
   text-align: center;
-  color: black;
 }
 
 .homeimg {
@@ -129,19 +147,7 @@ li a:hover:not(.current) {
 }
 
 .text {
-  position: absolute;
-  bottom: 4px;
-  left: 255px;
-  text-align: center;
-  width: 655px;
-}
-
-.header {
-  position: absolute;
-  top: 4px;
-  left: 260px;
-  text-align: center;
-  width: 650px;
+  font-size: 110%;
 }
 
 /*
