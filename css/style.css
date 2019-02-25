@@ -33,8 +33,7 @@ p{
   font-family: Actor;
 }
 
-
- a.skip {
+a.skip {
   position: relative;
   left: -999px;
   width: 1px;
@@ -60,12 +59,13 @@ a.skip:focus, a.skip:active {
   border-color: white;
 }
 
-nav ul {
+nav ul{
   list-style-type: none;
-  margin: 15;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  max-height: 50px;
 }
 
 nav li {
@@ -83,6 +83,15 @@ nav li a {
 
 nav li a:hover:not(.current) {
   background-color: #111;
+}
+
+.navbar {
+  position: absolute;
+  top:auto;
+  cursor: pointer;
+  color: #FFFFFF;
+  align-items: center;
+  right: -980px;
 }
 
 a{
@@ -118,8 +127,9 @@ img[src$="png"] {
 }
 
 .horizimg {
-  width: 350px;
+  width: 345px;
   height: 250px;
+  max-width: 100%;
 }
 
 .horizimg img {
@@ -128,8 +138,9 @@ img[src$="png"] {
 }
 
 .verticalimg {
-  width: 350px;
+  width: 345px;
   height: 400px;
+  max-width: 100%;
 }
 
 .verticalimg img {
@@ -144,14 +155,32 @@ img[src$="png"] {
 
 .homeimg {
   opacity: .5;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
 }
 
-.text {
+p.texthome {
   font-size: 110%;
 }
 
-/*
-@media only screen and (min-width: 1024 px){
+@media screen and (max-width: 1200px){
+  .navbar {
+      right: 80px;
+      position: absolute;
+      top:auto;
+      align-items: center;
+      font-size: 20px;
+      top: auto;
+  }
 
+  nav ul {
+    list-style-type: none;
+    width: 100%;
+  }
+
+  nav li a{
+    text-align: left;
+  }
 }
-*/
