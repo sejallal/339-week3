@@ -13,26 +13,31 @@
   <header>
     <a href = "#content" class="skip">Skip to Content</a>
     <header>
-      <div class="drop">
-        <nav>
-          <ul class = "navbar" id = "navbarid">
-            <li><a href = "index.html">Home Page</a></li>
-            <li><a class = "current" href = "disorders.html">Common Disorders</a></li>
-            <li><a href = "resources.html">Resources</a></li>
-            <li><a href = "personalstories.html">Personal Stories</a></li>
-            <li><a href="javascript:void(0);" class="bars" onclick="navFunction()">
-                  <i class="fa fa-bars"></i>
-                </a></li>
-          </ul>
-        </nav>
+      <div class = "navbar" id = "navbarid">
+        <a href = "index.html">Home Page</a>
+        <a class = "current" href = "disorders.html">Common Disorders</a>
+        <div class="dropdown">
+          <button class="dropbtn">Resources
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="hotlines.html">24-Hour Hotlines</a>
+            <a href="oncampus.html">On Campus Resources</a>
+            <a href="online.html">Online Resources</a>
+          </div>
+        </div>
+        <a href = "personalstories.html">Personal Stories</a>
+        <a href="javascript:void(0);" class="bars" onclick="navFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    <h1>Common Mental Health Disorders on College Campuses</h1>
    </header>
   <main id = "content">
-
+    <h1>Common Mental Health Disorders on College Campuses</h1>
+  <button class="accordion"><h3>Anxiety Disorder</h3></button>
+  <div class = "panel">
   <div class = "box">
     <div class= "disorderhead">
-      <h2>Anxiety Disorder</h2>
       <p>People with this disorder respond to situations or objects with fear, stress or dread. This
     interferes with ones daily functioning and can cause physical problems such as rapid heartbeat, sweating, shaking
     or crying leading to anxiety attacks or fear of social situations. Anxiety Disorder affects over 40 million adults
@@ -52,9 +57,11 @@
     resources on/off campus as well as many organizations that offer apps and assistance when it comes to anxiety such as
     the Anxiety and Depression Association of America, American Psychological Association,
     and the Social Anxiety Association can help you find ways to cope and improve your or your friend's Anxiety Disorder. </p>
+  </div>
+  <button class="accordion"><h3>Depression</h3></button>
+  <div class = "panel">
   <div class = "box">
     <div class= "disorderhead">
-      <h2>Depression</h2>
       <p>Depression is a very common disease that where people feel helpless, sad, alone, and detached from all their surroundings.
     This leads them to lose motivation in work, lose interest in activities, distancing themself from their loved ones, etc. It affects
     how one feels and acts ultimately decreasing ones ability to function. These illnesses occur in the brain and are caused by genetics as well as biological, psychological and
@@ -75,15 +82,13 @@
     meditation, yoga, thought journaling and more. Finally there are many online resources and apps to help understand depression and find ways of
     helping one cope with it: Anxiety and Depression Association of America, National Institute of Mental Health, ULifeline, American College Health
     Association and more. </p>
-  <div class = "verticalimg">
-    <img src = "images/mentalhealthgraph.jpg" alt = "Graph"/>
   </div>
+  <button class="accordion"><h3>Bipolar Disorder
+    <i class="fa fa-smile-beam" style="color:black;"></i>
+    <i class="fa fa-frown" style="color:black;"></i></h3></button>
+  <div class = "panel">
   <div class = "box">
     <div class= "disorderhead">
-      <h2>Bipolar Disorder
-        <i class="fa fa-smile-beam" style="color:black;"></i>
-        <i class="fa fa-frown" style="color:black;"></i>
-      </h2>
       <p>Bipolar Disorder, also known as manic depression, is a brain disorder that cause extreme shifts in mood swings, activity levels, energy levels and the ability to carry out tasks
         day to day. People with this disorder experience very intense periods of emotion highs and lows. These mood swings can affect sleep patterns,
       eating habits, judgement and behavior. There are three things scientists have seen that contribute to bipolar disorder: stress, genetics and brain changes.
@@ -110,9 +115,11 @@
     excersize, practicing healthy sleeping and eating habits, avoiding alcohol, drugs, caffiene and keeping a thought journal. Treatments include medication as well as psychotherapy. There are
     many resources both on and off campus such as meditation centers and counseling psychotherapy centers. However, there are online resources to help understand Bipolar Disorder and
     help one cope with it. This includes the Depression and Bipolar Support Alliance.</p>
+  </div>
+  <button class="accordion"><h3>Obsessive-Compulsive Disorder (OCD)</h3></button>
+  <div class = "panel">
   <div class = "box">
     <div class= "disorderhead">
-      <h2>Obsessive-Compulsive Disorder (OCD)</h2>
       <p>OCD is a common long-lasting disorder where a person has uncontrollable reoccuring thoughts (obsessions) and behaviors (compulsions) that one feels
     the urge to repeat over and over. These obsessions or compulsions can interfere with all aspects of life (work, school, relationships). Ones thoughts
     and actions are beyond their control. About 1/40 adults in the US has OCD. </p>
@@ -132,9 +139,11 @@
     However, discussing this with a doctor first is necessary. Setting goals for yourself, joining a support group, finding healthy outlets to channel your energy such as exercizing or other hobbies on campus, and
     learning relaxation techniques such as meditation, deep breathing or muscle relaxation can help as well. In addition, there are multiple online resources that help with helping one understand OCD and treating
     OCD: IOCDF (the International OCD Foundation), Peace of Mind Foundation, BeyondOCD and more.</p>
+  </div>
+  <button class="accordion"><h3>Post-Traumatic Stress Disorder (PTSD)</h3></button>
+  <div class = "panel">
   <div class = "box">
     <div class= "disorderhead">
-      <h2>Post-Traumatic Stress Disorder (PTSD)</h2>
       <p> PTSD is a disorder that develops in people that have had a shocking, scary, dangerous or traumatic event. This can be through nightmares or flashbacks.
     There can be certain situations or things people see that can trigger this. People that go through traumatic events have difficulty moving past the event
     or coping with it. With time and self care, however, this can improve. Up to 17% of college students suffer from PTSD.</p>
@@ -155,9 +164,11 @@
     cope with PTSD. On college campuses in particular can bring challenges to people who thought they have coped with their PTSD such as alcohol/drugs, crowded classrooms, noises, lack of sleep and the stress from school
     assignments. If you have a friend going through PTSD, understanding the situation they went through, being patient, offering to go with them to get help, being encouraging, and being there to listen is the best way to help them.
     Using relaxation techniques such as deep breathing, meditation and thought journaling, avoiding caffeine and alcohol, and having hobbies/activities as an outlet will help as well.</p>
+  </div>
+  <button class="accordion"><h3>Suicide</h3></button>
+  <div class = "panel">
   <div class = "box">
     <div class= "disorderhead">
-      <h2>Suicide</h2>
       <p>Suicide is the act where one deliberately takes their own life. Many factors can lead to one feeling the need to take their own life. When one feels hopeless, worthless and in despair and they do not take the steps necessary
     to improve their mental health, it can lead to this. However, it affects all their loved ones, not just the victim. In 2018, 1 in 5 college students were so stressed they considered
     suicide as an option for themself. In 2013, suicide was the 2nd leading cause of death for college students in the United States.</p>
@@ -175,9 +186,11 @@
   that can prevent one from taking their life. These include: Psychiatrists also recommend medications to people thinking of commiting suicide.</p>
   <h3>What to do if you are with someone that posted on social media or is about to take their life</h3>
   <p>Call 911 or the National Suicide Prevention Hot Line 1-800-273-TALK(8255) or text the Crisis Text Line - text HOME to 741741. All of these are confidential, people have saved lives by doing this.</p>
+  </div>
+  <button class="accordion"><h3>Eating Disorders</h3></button>
+  <div class = "panel">
   <div class = "box">
     <div class= "disorderhead">
-      <h2>Eating Disorders</h2>
       <p>During college, many people develop eating disorders. Eating disorders are extreme attitudes, emotions and behaviors that revolve around food and weight perceptions.
     It can cause serious physical health and mental health problems if not treated. Eating disorders occur because of stress, social media/celebrities, low self esteem or
     trying to look a specific way to be "beautiful". The most common types of eating disorders are Anorexia Nervosa, Bulimia Nervosa and Binge Eating Disorder. About 10-20%
@@ -208,9 +221,11 @@
     being mindful and aware of your senses, being active to channel your energy, listening to music, etc. There are many good online resources that help with eating disorders as well.
     Some of these include NEDA (National Eating Disorder Association), the National Eating Disorders Helpline at 800-931-2237, the Academy for Eating Disorders, the International Association
     of Eating Disorder Proffessionals and more.</p>
+  </div>
+  <button class="accordion"><h3>Addiction</h3></button>
+  <div class = "panel">
   <div class = "box">
     <div class= "disorderhead">
-      <h2>Addiction</h2>
       <p>Addiction is defined as dependency and repeated abuse of a drug or substance. In college, alcohol and drugs commonly can turn into an addiction. It is a psychological and physical
     innability to stop consuming a substance or drug even though it is damaging themself. About 21.3% of young adults use illicit drugs, and about 20% meet the Alcohol Use Disorder criteria.</p>
     </div>
@@ -225,9 +240,7 @@
     are present so you are not as tempted. Surround yourself with people that are a positive influence, will not cause you to feel tense, angry or lonely and will help you stop the drinking/drugs. Being honest about where
     you are getting the alcohol/drugs from and sticking with not using them is essential to avoid a relapse. Finally, seeking help from a professional will help you achieve sobriety so they can help identify what influenced
     you to develop addiction and provide helpful therapies or support groups to deal with the stressors and triggers.</p>
-
-  <h2>References</h2>
-
+  </div>
   </main>
   <footer>
     <p>Published</p>
