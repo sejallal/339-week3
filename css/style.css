@@ -324,10 +324,11 @@ p.texthome {
   color: white;
   font-size: 30px;
   cursor: pointer;
+  background-color: #454545;
 }
 
 .closebtn:hover {
-  color: lightgrey;
+  color: white;
 }
 
 
