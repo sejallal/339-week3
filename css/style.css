@@ -116,7 +116,7 @@ a.skip:focus, a.skip:active {
 }
 
 a.current {
-  background-color: #bd8c7d;
+  background-color: #fbd8cd;
   color: #454545;
 }
 
@@ -306,9 +306,9 @@ p.texthome {
 
 .callout-header {
   padding: 25px 15px;
-  background: #555;
+  background: #454545;
   font-size: 25px;
-  color: #bd8c7d;
+  color: #fbd8cd;
 }
 
 .callout-container {
