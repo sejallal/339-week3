@@ -1,6 +1,7 @@
 body{
   background: #E8E8E6;
-  color: #bd8c7d;
+  /*color: #bd8c7d;*/
+  color: #7a2910;
   size: 150%;
   margin: 5%;
 }
@@ -54,7 +55,7 @@ a.skip:focus, a.skip:active {
   padding: 5px;
   text-align: left;
   font-family: Actor;
-  color:#bd8c7d;
+  color:#7a2910;
   border-style: solid;
   border-width: 5px;
   border-color: white;
@@ -177,7 +178,7 @@ img[src$="png"] {
 
 .active, .accordion:hover {
   background-color: #DCD0C0;
-  color: #bd8c7d;
+  color: #7a2910;
 }
 
 .panel {
