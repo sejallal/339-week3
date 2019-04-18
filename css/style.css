@@ -62,7 +62,7 @@ a.skip:focus, a.skip:active {
 
 .navbar {
   overflow: hidden;
-  background-color: #373737;
+  background-color: #454545;
 }
 
 .navbar a {
@@ -117,7 +117,7 @@ a.skip:focus, a.skip:active {
 
 a.current {
   background-color: #bd8c7d;
-  color: #373737;
+  color: #454545;
 }
 
 .navbar .icon {
