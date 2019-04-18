@@ -230,14 +230,15 @@ p.texthome {
 
 .sticky {
   position: fixed;
+  top: 0;
   width: 90%;
 }
 
-.content {
+/*.content {
   padding: 16px;
 }
 
-/*.sticky + .content {
+.sticky + .content {
   padding-top: 60px;
 }*/
 
