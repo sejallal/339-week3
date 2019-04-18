@@ -35,6 +35,8 @@ p{
   font-family: Actor;
 }
 
+/* Skip to Content */
+
 a.skip {
   position: relative;
   left: -999px;
@@ -61,6 +63,8 @@ a.skip:focus, a.skip:active {
   border-color: white;
 }
 
+/* Hamburger and Responsive Dropdown Menu */
+
 .navbar {
   overflow: hidden;
   background-color: #454545;
@@ -71,10 +75,10 @@ a.skip:focus, a.skip:active {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  padding: 15px 17px;
+  font-size: 18px;
   font-family: Futura;
+  text-decoration: none;
 }
 
 .dropdown {
@@ -83,12 +87,12 @@ a.skip:focus, a.skip:active {
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
-  background-color: inherit;
+  padding: 15px 17px;
+  background-color: #454545;
   font-family: Futura;
   margin: 0;
 }
@@ -96,16 +100,16 @@ a.skip:focus, a.skip:active {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   z-index: 1;
 }
 
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 13px 16px;
+  padding: 13px 17px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -187,42 +191,39 @@ img[src$="png"] {
   overflow: hidden;
 }
 
-/* The Modal (background) */
+/* Modal */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-bottom: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.3);
 }
 
-/* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: white;
   margin: auto;
-  margin-top: 15px;
-  padding: 20px;
-  border: 1px solid #888;
+  margin-top: 12px;
+  padding: 18px;
+  border: 1px solid black;
   width: 80%;
 }
 
-/* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #454545;
   float: right;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
@@ -282,37 +283,33 @@ p.texthome {
   margin-left: 10px;
 }
 
+/* sticky nav */
+
 .sticky {
   position: fixed;
   top: 0;
   width: 90%;
 }
 
-/*.content {
-  padding: 16px;
-}
+/* callout */
 
-.sticky + .content {
-  padding-top: 60px;
-}*/
-
-.callout {
+.call {
   position: fixed;
-  bottom: 35px;
-  right: 20px;
-  margin-left: 20px;
-  max-width: 300px;
+  bottom: 40px;
+  right: 25px;
+  margin-left: 15px;
+  max-width: 315px;
   font-family: Futura;
 }
 
-.callout-header {
-  padding: 25px 15px;
+.call-header {
+  padding: 28px 18px;
   background: #454545;
   font-size: 25px;
   color: #fbd8cd;
 }
 
-.callout-container {
+.call-container {
   padding: 12px;
   background-color: white;
   color: black
@@ -320,10 +317,10 @@ p.texthome {
 
 .closebtn {
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 6px;
+  right: 17px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   background-color: #454545;
 }
@@ -355,9 +352,6 @@ p.texthome {
 }
 
 @media screen and (max-width: 800px){
-  /*.sticky {
-    display: none;
-  }*/
 
   .navbar a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -368,7 +362,9 @@ p.texthome {
     display: block;
   }
 
-  .navbar.respond {position: relative;}
+  .navbar.respond {
+    position: relative;
+  }
 
   .navbar.respond .icon {
     position: absolute;
