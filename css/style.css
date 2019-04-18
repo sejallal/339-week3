@@ -230,11 +230,16 @@ p.texthome {
 
 .sticky {
   position: fixed;
-  top: 0;
   width: 90%;
 }
 
+.content {
+  padding: 16px;
+}
 
+/*.sticky + .content {
+  padding-top: 60px;
+}*/
 
 .callout {
   position: fixed;
