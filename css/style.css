@@ -296,10 +296,6 @@ p.texthome {
 @media screen and (max-width: 800px){
   /*.sticky {
     display: none;
-  }
-
-  .sticky + #content {
-    display: none;
   }*/
 
   .navbar a:not(:first-child), .dropdown .dropbtn {
@@ -329,7 +325,7 @@ p.texthome {
     float: none;
   }
 
-  .topnav.responsive .dropdown-content {
+  .navbar.respond .dropdown-content {
     position: relative;
   }
 
