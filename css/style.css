@@ -173,7 +173,7 @@ img[src$="png"] {
   border: none;
   outline: none;
   margin: 5px;
-  color: #bd8c7d;
+  color: #7a2910;
 }
 
 .active, .accordion:hover {
@@ -237,7 +237,7 @@ img[src$="png"] {
   padding: 10px;
   outline: none;
   margin: 5px;
-  color: #bd8c7d;
+  color: #7a2910;
 }
 
 .homepage {
