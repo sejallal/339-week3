@@ -227,7 +227,7 @@ img[src$="png"] {
   cursor: pointer;
 }
 
-#button {
+#myBtn {
   background-color: #d1bfa7;
   color: white;
   width: 100%;
