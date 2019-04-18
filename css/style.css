@@ -8,16 +8,18 @@ body{
 h1{
   text-align: center;
   font-family: Futura;
-  font-size: 230%;
+  font-size: 200%;
+  margin: 30px;
 }
 
 h2{
   font-family: Futura;
+  font-size: 150%;
 }
 
 h3{
   font-family: Futura;
-  font-size: 150%;
+  font-size: 125%;
 }
 
 h4{
@@ -118,7 +120,7 @@ a.current {
   color: #373737;
 }
 
-.navbar .bars {
+.navbar .icon {
   display: none;
 }
 
@@ -188,8 +190,9 @@ img[src$="png"] {
   text-align: center;
 }
 
-.homeimg {
-  opacity: .70;
+.homeimg img{
+  opacity: .50;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -232,6 +235,7 @@ p.texthome {
   top: 0;
   width: 90%;
 }
+
 
 
 .callout {
@@ -304,14 +308,14 @@ p.texthome {
     display: none;
   }
 
-  .navbar a.bars {
+  .navbar a.icon {
     float: right;
     display: block;
   }
 
   .navbar.respond {position: relative;}
 
-  .navbar.respond .bars {
+  .navbar.respond .icon {
     position: absolute;
     right: 0;
     top: 0;
